@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:audioplayers/audio_cache.dart';
 
-myapp() {
+myMusicApp() {
   audioPlay() {
     var audio = AudioCache();
     audio.play('faded.mp3');
   }
       AudioPlayer audioPlayer = AudioPlayer();
-        var a=AudioCache(fixedPlayer: audioPlayer);
+      var mus = AudioCache(fixedPlayer: audioPlayer);
  
 
   var mybody = Container(
@@ -31,8 +31,7 @@ myapp() {
             ),
           ),
           margin: EdgeInsets.all(50),
-          // padding: EdgeInsets.all(30),
-          // padding: EdgeInsets.only(left: 70),
+        
           alignment: Alignment.center,
           width: 500,
           height: 270,
@@ -71,7 +70,7 @@ myapp() {
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),),
-          ),//FlatButton.icon(onPressed: mypress, icon: Icon(Icons.play_arrow), label:Text('play'),)//(onPressed: mypress, child: Text('click'),),//Text('hi'),//RaisedButton.icon(onPressed: mypress, icon: Icon(Icons.email) , label: null),
+          ),
         ),
          Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -80,9 +79,7 @@ myapp() {
                     child:Icon(Icons.play_arrow),
                     
                     onPressed: audioPlay,
-                    // (){
-                    //  audioPlayer.play("http://api.pendusaab.com/download/128k-nyho/Kaise-Mujhe.mp3");
-                    // },
+                    
                      ),
                   RaisedButton(
                     
@@ -106,7 +103,7 @@ myapp() {
   );
   return MaterialApp(
      debugShowCheckedModeBanner: false,
-    // debugShowCheckedModeBanner: false,
+    
     home: Scaffold(
       appBar: AppBar(
         title: Text('Music Play'),
