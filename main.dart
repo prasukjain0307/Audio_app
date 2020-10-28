@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   MyApp createState() =>MyApp();
   Widget build(BuildContext context) {
-    return  myapp();
+    return  myMusicApp();
   }
   }
  
